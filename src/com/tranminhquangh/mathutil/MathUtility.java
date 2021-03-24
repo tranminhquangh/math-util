@@ -33,7 +33,7 @@ public class MathUtility {
 
         }
         // den doan nay sure n tu 2 ... 20
-        long result = 0; // co tinh hen, lat tinh tiep
+        long result = 1; // co tinh hen, lat tinh tiep
         for (int i = 2; i <= n; i++) {
             result = result * i;
         }
