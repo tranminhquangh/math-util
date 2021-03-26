@@ -1,4 +1,7 @@
 ## Welcoome to Math Utility repository. this repo offers variorus math methods thost as a helper for your project
+
+[![mathutil project | CT process u=included | © 2021 by tranminhquangh](https://github.com/tranminhquangh/math-util/actions/workflows/mathutil-ci-actions.yml/badge.svg)](https://github.com/tranminhquangh/math-util/actions/workflows/mathutil-ci-actions.yml)
+
 ### You will find in this repo the flolwing stuff:
   *.gitingnore file itself to demonstrate how to ask the Git tool to upload a file or not.
  *. pitself to show the contents of this repo. It acts as a hame page of this repo
