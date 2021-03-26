@@ -24,6 +24,21 @@ public class MathUtility {
     //kieu long: 10^18, 18 con so 0 toi da
     // sqrt(4) -> 2     y = f(x) = x^x
 
+//    public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid argument. n must be between 0..20");
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1; // 0! = 1! = 1 tinh luon cho nhanh
+//
+//        }
+//        // den doan nay sure n tu 2 ... 20
+//        long result = 1; // co tinh hen, lat tinh tiep
+//        for (int i = 2; i <= n; i++) {
+//            result = result * i;
+//        }
+//        return result;
+//    }
     public static long getFactorial(int n) {
         if (n < 0 || n > 20) {
             throw new IllegalArgumentException("Invalid argument. n must be between 0..20");
@@ -32,12 +47,8 @@ public class MathUtility {
             return 1; // 0! = 1! = 1 tinh luon cho nhanh
 
         }
-        // den doan nay sure n tu 2 ... 20
-        long result = 1; // co tinh hen, lat tinh tiep
-        for (int i = 2; i <= n; i++) {
-            result = result * i;
-        }
-        return result;
+        // minh thua biet n! = n * (n - 1)! 
+        return n * getFactorial(n - 1);
     }
+    
 }
-
